@@ -217,6 +217,15 @@
   .info-row .label{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700}
   .info-row .val{font-weight:600;margin-top:3px;color:var(--white)}
   .info-row .val a{color:var(--white)}
+  .info-row .val a.maplink{display:block;text-decoration:none;transition:opacity .2s}
+  .info-row .val a.maplink:hover{opacity:.82}
+  .info-row .val a.maplink:hover .street{text-decoration:underline;text-underline-offset:3px}
+  .info-row .val .dirs{
+    display:inline-flex;align-items:center;gap:5px;margin-top:7px;
+    font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:rgba(255,255,255,.62);
+  }
+  .info-row .val .dirs svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;margin:0}
   .info-row .val span{display:block;color:rgba(255,255,255,.7);font-weight:500;font-size:.92rem}
   .hours-line{display:flex;justify-content:space-between;font-size:.95rem;margin-top:3px;color:var(--white)}
   .hours-line span:last-child{color:rgba(255,255,255,.75)}
@@ -418,7 +427,7 @@
         <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         <div>
           <div class="label">Τοποθεσία</div>
-          <div class="val">1ης Απριλίου 1<span>Αραδίππου 7104, Λάρνακα, Κύπρος</span></div>
+          <div class="val"><a class="maplink" href="https://maps.app.goo.gl/xhkb4agzGWLqAgNZA" target="_blank" rel="noopener"><span class="street" style="display:inline">1ης Απριλίου 1</span><span>Αραδίππου 7104, Λάρνακα, Κύπρος</span><span class="dirs">Οδηγίες <svg viewBox="0 0 24 24" fill="none"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a></div>
         </div>
       </div>
       <div class="info-row">
